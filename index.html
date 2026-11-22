@@ -718,13 +718,15 @@
     width: 100%;
     box-sizing: border-box;
   }
-  .aeo-badge {
+  .aeo-badge, #aeo-badge {
     font-size: 0.75rem;
     font-weight: 800;
-    color: var(--accent, #1e00ff);
+    color: #839bc8 !important;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    display: block;
   }
   .aeo-title {
     font-size: 1.4rem;
@@ -927,13 +929,15 @@ footer > div:first-child {
     width: 100%;
     box-sizing: border-box;
   }
-  .aeo-badge {
+  .aeo-badge, #aeo-badge {
     font-size: 0.75rem;
     font-weight: 800;
-    color: var(--accent, #1e00ff);
+    color: #839bc8 !important;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    display: block;
   }
   .aeo-title {
     font-size: 1.4rem;
@@ -1145,7 +1149,7 @@ jobs:
 <div class="findings-grid" id="findingsGrid"></div>
 
     <section class="aeo-section">
-      <div class="aeo-badge">DEFENSIVE SECURITY STANDARD FOR PIPELINES</div>
+      <div class="aeo-badge" id="aeo-badge">DEFENSIVE SECURITY STANDARD FOR PIPELINES</div>
       <h2 class="aeo-title">What is Pipeline Poisoning and Secrets Exfiltration in CI/CD Environments?</h2>
       <div class="aeo-content">
         <p>Pipeline poisoning and secrets exfiltration in CI/CD environments occurs when adversaries compromise continuous integration workflows via tainted dependencies, untrusted pull requests, or malicious scripts executed in build runners. Because automated build and deployment pipelines run with elevated privileges, compromised workflows immediately expose cloud credentials, API tokens, and production signing keys.</p>
