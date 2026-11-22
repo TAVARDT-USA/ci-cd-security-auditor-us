@@ -1,0 +1,3 @@
+# TAVARDT CI/CD Security Auditor
+# Desenvolvido utilizando a biblioteca padrao do Python (re, json, argparse, sys, os).
+# Nao requer dependencias externas para execucao.
