@@ -1,47 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CI/CD Security Audit &amp; Software Supply Chain Hardening | TAVARDT USA</title>
+  <title>CI/CD Security Audit & Software Supply Chain Hardening | TAVARDT USA</title>
   <meta name="description" content="Corporate defensive engineering guide, pipeline immunization (GitHub Actions, GitLab CI), dangerous trigger mitigation (pull_request_target), and CLI supply chain auditing.">
   <link rel="canonical" href="https://tavardt-usa.github.io/ci-cd-security-auditor-us/">
-  <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="CI/CD Security Audit &amp; Software Supply Chain Hardening | TAVARDT">
-  <meta property="og:description" content="Technical guide for CI/CD RCE mitigation, immutable action pinning, and deterministic CLI security auditing.">
-  <meta property="og:url" content="https://tavardt-usa.github.io/ci-cd-security-auditor-us/">
+  
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./favicon.ico">
+
+  
+  <link rel="alternate" hreflang="pt-BR" href="https://tavardt-brasil.github.io/ci-cd-security-auditor-br/">
+  <link rel="alternate" hreflang="pt-PT" href="https://tavardt-portugal.github.io/ci-cd-security-auditor-pt/">
+  <link rel="alternate" hreflang="en-US" href="https://tavardt-usa.github.io/ci-cd-security-auditor-us/">
+  <link rel="alternate" hreflang="en-GB" href="https://tavardt-uk.github.io/ci-cd-security-auditor-uk/">
+  <link rel="alternate" hreflang="en-CA" href="https://tavardt-canada.github.io/ci-cd-security-auditor-ca/">
+  <link rel="alternate" hreflang="en-AU" href="https://tavardt-australia.github.io/ci-cd-security-auditor-au/">
+  <link rel="alternate" hreflang="en-NZ" href="https://tavardt-new-zealand.github.io/ci-cd-security-auditor-nz/">
+  <link rel="alternate" hreflang="es-ES" href="https://tavardt-espana.github.io/ci-cd-security-auditor-es/">
+  <link rel="alternate" hreflang="es-MX" href="https://tavardt-mexico.github.io/ci-cd-security-auditor-mx/">
+  <link rel="alternate" hreflang="fr-FR" href="https://tavardt-france.github.io/ci-cd-security-auditor-fr/">
+  <link rel="alternate" hreflang="it-IT" href="https://tavardt-italia.github.io/ci-cd-security-auditor-it/">
+  <link rel="alternate" hreflang="x-default" href="https://tavardt-usa.github.io/ci-cd-security-auditor-us/">
+
+  
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="ai-content-declaration" content="citable-security-tool">
+
+  
+  <meta name="geo.region" content="US">
+  <meta name="geo.placename" content="USA">
+  <meta name="geo.position" content="38.8951;-77.0364">
+  <meta name="ICBM" content="38.8951, -77.0364">
+
+  
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TAVARDT USA">
+  <meta property="og:title" content="CI/CD Security Audit & Software Supply Chain Hardening | TAVARDT USA">
+  <meta property="og:description" content="Corporate defensive engineering guide, pipeline immunization (GitHub Actions, GitLab CI), dangerous trigger mitigation (pull_request_target), and CLI supply chain auditing.">
+  <meta property="og:url" content="https://tavardt-usa.github.io/ci-cd-security-auditor-us/">
+  <meta property="og:image" content="https://tavardt-usa.github.io/ci-cd-security-auditor-us/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://tavardt-usa.github.io/ci-cd-security-auditor-us/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="CI/CD Security Audit & Software Supply Chain Hardening | TAVARDT USA">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="en_CA">
+  <meta property="og:locale:alternate" content="en_AU">
+  <meta property="og:locale:alternate" content="en_NZ">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="es_MX">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="it_IT">
 
+  
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CI/CD Security Audit &amp; Software Supply Chain Hardening">
-  <meta name="twitter:description" content="Zero Trust architecture and deterministic pipeline auditing against Software Supply Chain attacks.">
+  <meta name="twitter:site" content="@tavardt">
+  <meta name="twitter:title" content="CI/CD Security Audit & Software Supply Chain Hardening | TAVARDT USA">
+  <meta name="twitter:description" content="Corporate defensive engineering guide, pipeline immunization (GitHub Actions, GitLab CI), dangerous trigger mitigation (pull_request_target), and CLI supply chain auditing.">
+  <meta name="twitter:image" content="https://tavardt-usa.github.io/ci-cd-security-auditor-us/og-image.jpg">
+  <meta name="twitter:image:alt" content="CI/CD Security Audit & Software Supply Chain Hardening | TAVARDT USA">
 
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "SoftwareApplication",
-        "name": "TAVARDT CI/CD Security Auditor & Supply Chain Integrity Inspector",
-        "applicationCategory": "DeveloperApplication",
+        "@type": "WebApplication",
+        "@id": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/#webapp",
+        "url": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/",
+        "name": "CI/CD Security Audit & Software Supply Chain Hardening | TAVARDT USA",
+        "applicationCategory": "SecurityApplication",
         "operatingSystem": "Linux, macOS, Windows",
-        "description": "Deterministic CLI utility and architectural specification for security verification in GitHub Actions and GitLab CI workflows.",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "description": "Corporate defensive engineering guide, pipeline immunization (GitHub Actions, GitLab CI), dangerous trigger mitigation (pull_request_target), and CLI supply chain auditing.",
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD"
         },
+        "author": {
+          "@type": "Organization",
+          "name": "TAVARDT USA",
+          "url": "https://tavardt.com/us/"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "TAVARDT USA",
-          "url": "https://ag.tavardt.com/us/",
-          "logo": "https://ag.tavardt.com/img/tavardt-og.png"
+          "url": "https://tavardt.com/us/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/favicon.ico"
+          },
+          "sameAs": [
+            "https://tavardt.com/us/",
+            "https://tools.tavardt.com/us/",
+            "https://github.com/TAVARDT-USA"
+          ]
         }
       },
       {
+        "@type": "TechArticle",
+        "@id": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/#article",
+        "headline": "CI/CD Security Audit & Software Supply Chain Hardening",
+        "description": "Corporate defensive engineering guide, pipeline immunization (GitHub Actions, GitLab CI), dangerous trigger mitigation (pull_request_target), and CLI supply chain auditing.",
+        "inLanguage": "en-US",
+        "author": {
+          "@type": "Organization",
+          "name": "TAVARDT Cybersecurity Division"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "TAVARDT USA",
+          "url": "https://tavardt.com/us/"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".hero-title", ".hero-subtitle", ".aeo-title", ".aeo-content"]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "TAVARDT USA",
+            "item": "https://tavardt.com/us/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Security Tools",
+            "item": "https://tools.tavardt.com/us/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CI/CD Security Auditor & Supply Chain Integrity Inspector",
+            "item": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/"
+          }
+        ]
+      },
+      {
         "@type": "FAQPage",
+        "@id": "https://tavardt-usa.github.io/ci-cd-security-auditor-us/#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -89,6 +201,9 @@
   }
   </script>
 
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -872,6 +987,12 @@
         gap: 28px !important;
         padding: 32px 16px 24px !important;
       }
+    }
+  
+    /* Core Web Vitals & Rendering Performance */
+    .matrix-section, .blueprints-section, .faq-section {
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 600px;
     }
   </style>
 </head>
