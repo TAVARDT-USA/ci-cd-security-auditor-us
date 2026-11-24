@@ -13,7 +13,7 @@ Corporate defensive engineering guide and cybersecurity hub for pipeline hardeni
 
 This repository delivers the defensive security architecture specification, comparative pipeline posture diagnostics, and a deterministic Python CLI utility for structural verification of CI/CD YAML manifests.
 
-* **Organization:** TAVARDT-USA
+* **Organization:** TAVARDT
 * **Official Hub:** [https://tavardt-usa.github.io/ci-cd-security-auditor-us/](https://tavardt-usa.github.io/ci-cd-security-auditor-us/)
 * **Reference Standards:** CIS Software Supply Chain Security Guide, OWASP Top 10 for CI/CD, SLSA Framework Level 3.
 
