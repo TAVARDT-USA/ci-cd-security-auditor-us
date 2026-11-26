@@ -1097,7 +1097,53 @@ python audit_ci_cd_security.py .github/workflows/</div>
 </section>
 <section class="faq-section">
 <h2 class="faq-title">Frequently Asked Questions on CI/CD &amp; Supply Chain Security</h2>
-<div class="faq-list"><div class="faq-item"><div class="faq-question">Why is the pull_request_target trigger considered a critical risk in GitHub Actions?<span class="faq-toggle">+</span></div><div class="faq-answer">The pull_request_target trigger runs in the context of the base repository with elevated write privileges and unrestricted access to corporate secrets. If the workflow checks out the untrusted fork commit without strict isolation, external attackers can inject malicious commands and exfiltrate production secrets.</div></div><div class="faq-item"><div class="faq-question">What is the security risk of using mutable tags (such as @v3 or @main) in third-party actions?<span class="faq-toggle">+</span></div><div class="faq-answer">Git tags are mutable references that can be silently repointed to compromised commits. If the developer account or repository hosting the action is breached, attackers can replace the tag with malicious data exfiltration code. Absolute defense requires pinning by an immutable 40-character commit SHA.</div></div><div class="faq-item"><div class="faq-question">What is the principle of least privilege for CI/CD automation tokens (GITHUB_TOKEN)?<span class="faq-toggle">+</span></div><div class="faq-answer">Historically, default tokens inherited global write privileges (write-all). The least privilege policy mandates declaring permissions: contents: read at the top-level workflow scope, granting write access only to specific jobs that explicitly publish releases or packages.</div></div><div class="faq-item"><div class="faq-question">How can inline command injection be prevented in GitHub Actions run: blocks?<span class="faq-toggle">+</span></div><div class="faq-answer">Never interpolate GitHub context expressions (such as ${ github.event.pull_request.title }) directly into bash script bodies. Instead, map the value to an environment variable (env:) and reference it as a standard shell variable ($PR_TITLE) to prevent command delimiters from executing.</div></div><div class="faq-item"><div class="faq-question">How can CI/CD pipelines be audited deterministically?<span class="faq-toggle">+</span></div><div class="faq-answer">Run the official audit_ci_cd_security.py utility directly in your terminal or CI/CD runner. It performs static analysis across YAML workflow trees, verifying permissions, action pinning, and context sanitization without external network dependencies.</div></div></div>
+<div class="faq-list">
+<div class="faq-item">
+<button class="faq-btn" onclick="toggleFaq(this)" type="button">
+<span>Why is the pull_request_target trigger considered a critical risk in GitHub Actions?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-body">
+The pull_request_target trigger runs in the context of the base repository with elevated write privileges and unrestricted access to corporate secrets. If the workflow checks out the untrusted fork commit without strict isolation, external attackers can inject malicious commands and exfiltrate production secrets.
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" onclick="toggleFaq(this)" type="button">
+<span>What is the security risk of using mutable tags (such as @v3 or @main) in third-party actions?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-body">
+Git tags are mutable references that can be silently repointed to compromised commits. If the developer account or repository hosting the action is breached, attackers can replace the tag with malicious data exfiltration code. Absolute defense requires pinning by an immutable 40-character commit SHA.
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" onclick="toggleFaq(this)" type="button">
+<span>What is the principle of least privilege for CI/CD automation tokens (GITHUB_TOKEN)?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-body">
+Historically, default tokens inherited global write privileges (write-all). The least privilege policy mandates declaring permissions: contents: read at the top-level workflow scope, granting write access only to specific jobs that explicitly publish releases or packages.
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" onclick="toggleFaq(this)" type="button">
+<span>How can inline command injection be prevented in GitHub Actions run: blocks?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-body">
+Never interpolate GitHub context expressions (such as ${ github.event.pull_request.title }) directly into bash script bodies. Instead, map the value to an environment variable (env:) and reference it as a standard shell variable ($PR_TITLE) to prevent command delimiters from executing.
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-btn" onclick="toggleFaq(this)" type="button">
+<span>How can CI/CD pipelines be audited deterministically?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-body">
+Run the official audit_ci_cd_security.py utility directly in your terminal or CI/CD runner. It performs static analysis across YAML workflow trees, verifying permissions, action pinning, and context sanitization without external network dependencies.
+</div>
+</div>
+</div>
 </section>
 <div class="cta-card">
 <h3>Need Professional Hardening for CI/CD Pipelines &amp; Software Supply Chain?</h3>
